@@ -10,9 +10,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.junit.vintage:junit-vintage-engine:5.10.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.10.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
 }
 
 tasks.test {
-    useJUnit()
+    useJUnitPlatform()
 }
